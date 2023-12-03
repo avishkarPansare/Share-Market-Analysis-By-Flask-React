@@ -1,0 +1,14 @@
+services:
+  web:
+    build: '.'
+    ports:
+      - "5003:5003"
+
+
+# ---------------
+  mongodb_container:
+    image: mongo:latest
+    ports:
+      - "27017:27017"
+
+
